@@ -1,8 +1,4 @@
 import random
-change_size = 'tutaj co drugi znak ma być zapisany wielką literą'
-randomowy = 'ldjfsg lkhkhj uiuytfs'
-to_numbers = 'lkjshooeeeiiii!!alkslhka'
-powstale = []
 def bubblesize(text):
     """Returns bubbelized string"""
     chars = []
@@ -19,7 +15,19 @@ def bubblesize(text):
 
 
 def randomize(text):
-    pass
+    chars = []
+    for idx, char in enumerate(text):
+        if random.randint(0, 1):
+            chars.append(char.upper())
+        else:
+            chars.append(char.lower())
+    return ''.join(chars)
+
+
+
+
+
+
 
 def numberize(text):
     pass
